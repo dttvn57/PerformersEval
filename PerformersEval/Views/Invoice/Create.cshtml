@@ -1,0 +1,259 @@
+﻿@model PerformersEval.Models.Invoice
+
+@{
+    ViewBag.Title = "Invoice";
+    if (TempData["PRINTSTATUS"] != null)
+    {
+        @TempData["PRINTSTATUS"];
+    }
+    @*
+    Model.SignedDate = DateTime.Now;
+    Model.ManagerSignedDate = DateTime.Now;
+    Model.LibrarianSignedDate = DateTime.Now;
+    *@
+}
+
+@if (Model.InvoiceID > 0)
+{ 
+    @Html.ActionLink("Print Invoice", "PrintInvoice", new { invoiceId = Model.InvoiceID }, new { onclick = "alertPrint();" } )
+    
+    @*
+ <a href="#" onclick="window.open('/Images/25_invoice.pdf', '_blank', 'fullscreen=yes'); return false;">MyPDF</a>
+    <input type="button" value="Capacity Chart" id="PrintDoc" >
+   @Ajax.ActionLink("Print Invoice", "PrintInvoice", new { invoiceId = Model.InvoiceID }, null)
+                                                            new AjaxOptions 
+                                                           {
+                                                               HttpMethod = "GET",
+                                                               OnSuccess = "successCall" 
+                                                           })  
+   new AjaxOptions() 
+                                                    { 
+                                                        HttpMethod = "GET", 
+                                                        InsertionMode= InsertionMode.Replace, 
+                                                        UpdateTargetId="div_serverdate",
+                                                        OnSuccess = "(function(){updateCount('parameter');})"
+                                                    })
+    *@
+     <div id="div_serverdate">
+
+     </div>
+    
+}
+<br />
+@Html.ActionLink("<< Go Back", "Index", "Invoice", new { spec = Model.SSN }, null)
+
+
+<p style="text-align: center;">
+<strong>ALAMEDA COUNTY LIBRARY<br /> INVOICE</strong>
+</p>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(false)
+
+    @Html.HiddenFor(m => m.SSN)
+    @Html.HiddenFor(m => m.InvoiceID)
+
+    <table class="noborder">
+    <colgroup>
+        @for (var i = 0; i < 10; i++)
+        {
+            <col style="width:10%;" />
+        }
+    </colgroup>
+
+    <tr>
+        <td colspan="1">FROM</td>
+        <td style="text-align: right">Name:</td>
+        <td colspan="8"><span>@Html.TextBoxFor(m => m.Name)@Html.ValidationMessageFor(m => m.Name)</span></td>
+    </tr>
+    <tr>
+        <td colspan="1"></td>
+        <td style="text-align: right">Address:</td>
+        <td colspan="8"><span>@Html.TextBoxFor(m => m.Addr1)@Html.ValidationMessageFor(m => m.Addr1)</span></td>
+    </tr>
+    <tr>
+        <td colspan="1"></td>
+        <td style="text-align: right">City:</td>
+        <td colspan="4"><span>@Html.TextBoxFor(m => m.City)@Html.ValidationMessageFor(m => m.City)</span></td>
+        <td style="text-align: right">State:</td>
+        <td><span>@Html.TextBoxFor(m => m.State, htmlAttributes: new { style="width:2em", placeholder="State", maxlength="2"})@Html.ValidationMessageFor(m => m.State)</span></td>
+        <td style="text-align: right">Zip Code:</td>
+        <td><span>@Html.TextBoxFor(m => m.Zip, htmlAttributes: new { style = "width:9em", placeholder = "Zip", maxlength = "10" })@Html.ValidationMessageFor(m => m.Zip)</span></td>
+    </tr>
+
+    <tr><td><br /></td></tr>
+    <tr>
+        <td colspan="2" style="text-align: right">SSN or EIN:</td>
+        <td colspan="7"><span>@Html.TextBoxFor(m => m.SSN, htmlAttributes: new { style = "width:6em", maxlength = "9", disabled="disabled"  }) (no dash)@Html.ValidationMessageFor(m => m.SSN)</span></td>
+    </tr>
+
+    <tr><td><br /></td></tr>
+   <tr>
+        <td colspan="3">I hereby request payment in the amount of $</td>
+        <td colspan="7"><span>@Html.TextBoxFor(m => m.Payment)@Html.ValidationMessageFor(m => m.Payment)</span></td>
+    </tr>
+    <tr>
+        <td colspan="2">in connection with</td>
+        <td colspan="8"><span>@Html.TextBoxFor(m => m.PaymentFor1, htmlAttributes: new { placeholder = "what" })</span></td>
+    </tr>
+   <tr>
+        <td colspan="2"></td>
+        <td colspan="8"><span>@Html.TextBoxFor(m => m.PaymentFor2, htmlAttributes: new { placeholder = "when and where" })</span></td>
+    </tr>
+
+   <tr><td><br /></td></tr>
+
+    <tr>
+       <td colspan="2"></td>
+       <td colspan="7"><hr></td>
+    </tr>
+   <tr>
+        <td colspan="2"></td>
+        <td colspan="6">SIGNATURE</td>
+        <td colspan="2">DATE</td>
+    </tr>
+@*
+   <tr>
+        <td colspan="1"></td>
+        <td colspan="1">SIGNATURE</td>
+       <!-- <td colspan="5"><span><input style="width:100%" type="text" name="tx_vendor_signature"></span></td> -->
+        <td colspan="5"><span>@Html.CheckBoxFor(m => m.SignedAck)&nbsp;&nbsp;By checking this box, you acknowledge that you've agreed to sign</span></td>
+        <td colspan="1" style="text-align: right">DATE</td>
+        <td colspan="2"><span>@Html.TextBoxFor(m => m.SignedDate, "{0:MM/dd/yyyy}", new { @class = "date", style = "width:5em" })</span></td>
+    </tr>
+        *@
+</table>
+
+<br /><br />
+<div style="width:80%; border-style:solid">
+    &nbsp;&nbsp;PAY FROM ACCT.:
+    <hr />
+    &nbsp;&nbsp;(Branch / Program manager complete this line)
+</div>
+
+<br /><br />
+        
+<table style="border-collapse: collapse; border: none 0;">
+    <colgroup>
+        @for (var i = 0; i < 10; i++)
+        {
+            <col style="width:10%;" />
+        }
+    </colgroup>
+
+    <tr>
+        <td colspan="3" style="text-align:left">EXAMINED AND APPROVED:</td>
+    </tr>
+    <tr><td><br /></td></tr>
+    <tr>
+        <td colspan="1"></td>
+        <td colspan="8"><hr></td>
+    </tr>   
+    <tr>
+        <td colspan="1"></td>
+        <td colspan="6">BRANCH / PROGRAM MANAGER</td>
+        <td colspan="1">DATE</td>
+    </tr>  
+
+    <tr><td><br /></td></tr>
+    <tr>
+        <td colspan="1"></td>
+        <td colspan="8"><hr></td>
+    </tr>  
+    <tr>  
+        <td colspan="1"></td>
+        <td colspan="6">PRINCIPAL LIBRARIAN or DEPUTY COUNTY LIBRARIAN</td>
+        <td colspan="1">DATE</td>
+    </tr>  
+
+    @*
+    <tr>
+        <td colspan="3" style="text-align:left">EXAMINED AND APPROVED:</td>
+    </tr>
+    <tr>
+        <td colspan="1"></td>
+        <td colspan="7"><span>@Html.TextBoxFor(m => m.Manager, htmlAttributes: new { disabled="disabled" })</span></td>
+        <td colspan="2"><span>@Html.TextBoxFor(m => m.ManagerSignedDate, "{0:MM/dd/yyyy}", htmlAttributes: new { style = "width:5em", disabled="disabled" })</span></td>
+    </tr>   
+    <tr>
+        <td colspan="1"></td>
+        <td colspan="7" style="text-align:left">BRANCH / PROGRAM MANAGER</td>
+        <td colspan="2" style="text-align:left">DATE</td>
+    </tr>  
+    <tr><td><br /></td></tr>
+    <tr>
+        <td colspan="1"></td>
+        <td colspan="7"><span>@Html.TextBoxFor(m => m.Librarian, htmlAttributes: new { disabled="disabled" })</span></td>
+        <td colspan="2"><span>@Html.TextBoxFor(m => m.LibrarianSignedDate, "{0:MM/dd/yyyy}", htmlAttributes: new { style = "width:5em", disabled="disabled" })</span></td>
+    </tr>  
+    <tr>  
+        <td colspan="1"></td>
+        <td colspan="7" style="text-align:left">PRINCIPAL LIBRARIAN or DEPUTY COUNTY LIBRARIAN</td>
+        <td colspan="2" style="text-align:left">DATE</td>
+    </tr>  
+    *@
+</table>
+    
+<p>
+    <input type="submit" value="Save" />
+</p>
+           
+}
+
+
+@section Scripts {
+@Scripts.Render("~/bundles/jqueryval")
+
+@Scripts.Render("~/bundles/jqueryui")
+@Styles.Render("~/Content/themes/base/css")
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery-1.5.1.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery-ui-1.8.11.min.js")" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".date").datepicker();
+    });
+</script>
+
+
+<script type="text/javascript">
+    function alertPrint(result) {
+        var msg = "The invoice has been saved to " + @Model.InvoiceID + "_Invoice.pdf in your Downloads folder. Please print and get the manager's approval";
+        alert(msg);
+        // $("#workSchedule").append(result); 
+        //var pdfUrl = "C:\\Users\\tdang\\Downloads\\" + @Model.InvoiceID.ToString() + "_Invoice.pdf";
+
+    }
+</script>
+
+
+    <script type="text/javascript">
+        function successCall(result) {
+            alert(result);
+        }
+    </script>
+
+<script type="text/javascript">
+    function printPDF(pdfUrl) {
+        var w = window.open(pdfUrl);
+        w.print();
+    }
+</script>
+
+<script>
+    $(document).ready(function () {
+        $('#PrintDoc').click(function () {
+            var pdfUrl = "C:\\Users\\tdang\\Downloads\\" + @Model.InvoiceID.ToString() + "_Invoice.pdf";
+            alert(pdfUrl);
+            var w = window.open(pdfUrl);
+            w.print();
+        });
+    });
+</script>
+
+}
+

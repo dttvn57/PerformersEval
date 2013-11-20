@@ -1,0 +1,610 @@
+2013-10-11 11:19:28.4712|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-11 11:19:54.5888|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-14 08:54:16.1872|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-14 08:54:24.2490|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-14 08:55:13.9140|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-14 08:56:44.1840|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-14 08:56:45.1451|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-14 08:56:45.2872|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-14 08:56:57.7364|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-14 09:43:04.8671|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-14 09:43:05.8602|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-14 10:31:28.7884|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-14 10:31:29.7705|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-14 10:33:11.8627|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-14 10:33:12.8178|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-14 10:35:59.4185|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-14 10:36:00.2946|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-14 10:36:38.4934|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-14 10:36:39.3245|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-14 10:38:06.6182|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-14 10:38:07.5213|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-14 10:38:50.5346|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-14 10:38:51.5237|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-14 10:39:11.2277|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-14 10:39:27.1933|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-14 10:40:40.5146|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-14 10:41:00.4986|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-14 10:41:01.4457|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-14 10:41:02.6728|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-14 10:50:38.3494|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-14 10:50:39.3495|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-14 10:50:41.2757|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-14 10:50:56.9052|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-14 11:24:11.4797|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-14 11:24:12.5298|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-14 11:28:27.9253|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-14 11:28:31.6977|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-14 12:13:27.6583|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-14 12:13:28.6474|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-14 13:39:07.3896|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-14 13:39:08.9073|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-14 13:46:25.5261|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-14 13:46:26.5211|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-14 14:24:52.5751|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-14 14:24:53.7801|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-14 14:34:27.8321|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-14 14:34:28.9121|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-14 14:35:38.2921|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-14 14:35:39.2921|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-14 14:37:40.0871|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-14 14:37:41.0111|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-14 14:37:59.1191|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-14 14:39:09.9791|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-14 14:40:45.7371|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-14 14:44:36.9381|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-14 14:44:38.0361|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-14 14:44:52.6551|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-14 14:44:53.6831|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-14 14:45:15.8711|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-14 14:46:15.7451|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-14 14:46:48.6751|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-14 14:46:49.6081|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-14 14:46:58.1091|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-14 14:47:09.0251|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-14 15:02:24.2575|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-14 15:02:25.4158|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-14 15:02:37.8226|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-14 15:03:00.1192|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-14 15:04:56.0510|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-14 15:07:31.6038|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-14 15:07:32.6990|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-14 15:07:35.8606|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-14 15:08:45.7296|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-14 15:11:56.4724|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-14 15:11:57.3975|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-14 15:12:02.2040|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-14 15:12:49.8717|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-15 08:44:28.0461|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-15 08:44:30.0323|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-15 09:14:17.0250|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-15 09:14:18.0601|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-15 09:21:09.2612|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-15 09:21:10.3313|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-15 09:22:53.0356|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-15 09:22:54.0217|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-15 09:25:04.1807|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-15 09:25:05.1838|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-15 09:27:05.8749|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-15 09:27:06.8960|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-15 09:28:55.7348|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-15 09:30:19.0252|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-15 09:30:40.9194|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-15 09:31:17.9711|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-15 09:32:25.1288|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-15 09:34:37.6670|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-15 09:36:40.2003|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-15 09:37:35.2848|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-15 09:38:18.3241|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-15 09:38:18.3371|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-15 09:38:18.9192|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-15 09:39:12.7235|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-15 09:39:12.7395|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-15 09:39:12.9976|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-15 09:39:45.8489|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-15 09:39:45.8539|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-15 09:39:46.1199|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-15 09:41:54.0227|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-15 09:41:54.0357|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-15 09:41:54.3367|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-15 09:42:14.8047|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-15 09:42:25.1358|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-15 09:43:32.7325|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-15 09:43:32.7375|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-15 09:43:32.9676|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-15 09:43:46.0739|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-15 09:43:58.7231|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-15 09:44:22.6685|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-15 09:59:26.9700|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-15 09:59:42.5325|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-15 13:43:27.6043|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-15 13:44:39.3251|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-15 13:44:39.3301|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-15 13:44:39.7923|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-15 13:46:49.6242|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-15 13:46:49.6302|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-15 13:46:49.6612|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-15 13:56:30.6130|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-15 13:56:30.6270|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-15 13:56:30.6970|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-15 14:27:52.4638|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-15 14:27:52.4688|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-15 14:27:52.5398|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-15 14:28:30.9966|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-15 14:33:48.5414|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-15 14:33:48.5544|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-15 14:33:48.5944|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-15 14:33:48.9624|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-15 14:35:10.3416|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-15 14:36:15.3711|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-15 14:37:05.1721|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-15 14:37:09.5035|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-15 14:37:15.5351|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-15 14:37:17.7813|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-15 15:15:30.7538|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-15 15:15:30.7708|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-15 15:15:30.8188|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-15 15:15:31.1528|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-15 15:15:50.9968|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-15 15:17:17.5125|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-15 15:17:17.5265|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-15 15:17:17.5695|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-15 15:17:37.6645|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-15 16:04:39.5098|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-15 16:04:39.5098|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-15 16:04:39.6169|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-15 16:04:40.0399|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-15 16:08:24.3560|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 08:10:09.8076|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 08:10:09.8216|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 08:10:09.8626|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 08:14:19.4735|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 08:14:19.4785|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 08:14:19.6286|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 08:15:41.4527|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 08:15:41.4687|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 08:15:41.5577|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 08:19:18.9395|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 08:19:18.9505|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 08:19:19.1055|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 08:23:32.3861|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 08:23:32.4181|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 08:23:32.4721|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 08:26:39.1256|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 08:26:39.1516|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 08:26:39.1966|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 08:28:32.7986|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 08:28:33.9986|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 08:28:35.0126|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 08:30:27.5826|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 08:35:03.1316|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 08:35:03.1806|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 08:35:03.2446|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 08:35:03.6176|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 08:53:47.2113|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 08:53:47.2183|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 08:53:47.2743|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 08:53:47.5674|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 08:53:55.6122|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 08:55:06.4762|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 08:55:09.1645|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 08:57:30.7227|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 08:58:13.1959|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 08:59:26.9573|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 08:59:32.7229|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 08:59:40.2946|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 09:11:55.1391|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 09:11:55.1831|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 09:11:55.2331|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 09:11:59.6486|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 09:17:07.8464|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 09:17:07.8814|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 09:17:07.9244|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 09:22:22.5048|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 09:22:22.5358|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 09:22:22.5808|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 09:37:57.4103|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 09:37:57.4273|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 09:37:57.5223|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 09:40:02.0598|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 09:40:02.0768|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 09:40:02.1018|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 09:41:44.7960|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 09:41:44.8101|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 09:41:44.8331|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 09:45:11.4247|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 09:45:11.4397|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 09:45:11.4657|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 09:45:59.9676|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 09:49:00.4476|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 10:19:32.4298|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 10:19:32.4428|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 10:19:32.4698|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 10:19:40.7466|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 10:21:18.6834|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 10:21:18.6834|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 10:21:18.7754|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 10:21:43.6869|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 10:32:29.4655|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 10:32:29.4715|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 10:32:29.5225|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 10:32:32.6968|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 10:39:29.1462|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 10:39:29.1712|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 10:39:29.2032|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 10:39:37.5247|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 10:41:26.7521|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 10:41:26.7581|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 10:41:26.7901|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 10:41:27.1580|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 10:46:04.2842|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 10:48:41.2432|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 11:12:21.8867|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 11:12:59.8565|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 11:15:45.1761|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 11:16:18.9625|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 11:16:58.0734|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 11:17:14.4650|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 11:17:24.5070|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 11:17:50.0346|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 11:25:44.4750|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 11:37:19.6535|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 11:37:54.9030|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 11:39:57.2923|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 11:45:37.5053|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 11:45:59.5625|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 11:46:11.0326|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 11:51:44.9780|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 11:52:30.0105|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 11:53:24.7670|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 11:53:24.7820|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 11:53:24.8060|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 11:53:25.0600|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 11:53:49.8125|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 11:59:44.7410|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 12:01:02.3188|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 12:01:28.8724|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 12:02:33.0578|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 12:03:31.7297|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 12:05:04.0359|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 12:05:19.4905|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 12:10:38.9884|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 12:11:14.3530|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 12:11:34.8070|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 12:11:59.9145|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 12:12:26.1331|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 12:12:45.7301|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 12:12:59.3595|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 12:12:59.3655|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 12:12:59.3965|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 12:12:59.6615|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 12:13:22.4048|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 12:13:44.3970|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 12:13:59.4405|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 12:14:37.8113|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 12:15:34.7790|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 12:16:06.0431|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 12:16:21.6227|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 12:16:44.7250|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 12:32:56.3661|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 12:33:25.4151|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 13:37:32.6168|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 13:37:32.6228|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 13:37:32.6668|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 13:39:10.3255|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 13:39:10.3315|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 13:39:10.3715|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 13:40:45.7381|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 13:40:45.7441|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 13:40:45.7871|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 13:40:46.0391|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 13:41:37.0162|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 13:41:53.9829|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 13:42:58.3453|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 13:42:58.3513|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 13:42:58.3923|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 13:43:24.7260|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 13:43:24.7320|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 13:43:24.7590|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 13:43:25.7941|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 13:45:03.9409|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 13:45:33.9609|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 13:45:48.3883|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 13:57:19.6615|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 13:58:47.6443|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 14:52:06.5051|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 14:52:06.5221|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 14:52:06.5521|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 14:52:06.9752|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 15:01:00.7835|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 15:01:00.7985|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 15:01:00.8255|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 15:01:01.0896|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 15:06:33.4238|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 15:06:33.4378|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 15:06:33.4628|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 15:06:33.8658|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 15:09:26.3776|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 15:09:41.5611|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 15:12:07.1094|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 15:12:07.1154|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 15:12:07.1464|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 15:12:07.5513|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 15:13:08.6979|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 15:13:08.7119|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 15:13:08.7359|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 15:13:09.1258|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 15:16:35.0470|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 15:16:35.0650|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-16 15:16:54.1571|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 15:16:56.8918|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 15:16:57.2248|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 15:17:56.6028|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 15:17:57.6247|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 15:17:57.7957|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 15:21:41.2845|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 15:21:42.3655|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 15:21:42.5135|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 15:23:18.0495|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 15:23:19.0825|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 15:23:19.2325|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 15:26:22.6535|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 15:26:24.7015|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 15:27:02.5315|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 15:27:03.8605|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 15:30:31.5465|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 15:44:01.5796|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 15:44:55.2610|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 15:44:56.3171|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-16 15:45:29.0714|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-16 16:15:48.2553|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-16 16:15:49.2404|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-17 08:08:59.1491|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-17 08:09:26.2238|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-17 08:10:17.7359|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-17 08:14:57.6879|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-17 08:21:35.2227|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-17 08:31:02.4014|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-17 08:33:58.6210|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-17 08:34:00.1311|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-17 08:35:11.0302|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-17 08:35:53.5745|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-17 08:36:33.3275|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-17 08:36:48.3890|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-17 08:36:55.8457|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-17 08:37:01.3603|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-17 08:37:04.8746|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-17 14:12:15.3427|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-17 14:12:16.4487|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-17 16:07:02.0857|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-17 16:07:03.4009|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-17 16:09:23.7959|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-17 16:09:25.7081|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-17 16:10:14.3450|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-17 16:12:14.0879|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-17 16:12:15.4671|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-17 16:13:22.0387|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-17 16:13:44.0459|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-17 16:13:44.0609|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-17 16:13:44.2860|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-17 16:13:50.0175|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-17 16:13:50.0495|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-17 16:13:50.1045|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-17 16:14:06.9602|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-17 16:25:47.0172|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-17 16:25:50.1055|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 07:45:57.8880|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 07:45:57.9310|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 07:45:58.5981|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 07:46:09.6272|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 08:11:45.9908|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 08:11:46.0328|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 08:11:46.5458|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 08:11:46.9129|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 08:25:27.1529|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 08:25:27.1699|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 08:25:27.3699|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 08:26:00.3712|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 08:26:00.4032|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 08:26:00.4472|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 08:26:15.2587|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 08:26:15.2657|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 08:26:15.4617|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 08:28:43.8035|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 08:28:43.8105|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 08:28:44.0456|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 08:30:23.8506|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 08:30:23.8576|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 08:30:24.0926|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 08:30:54.2696|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 08:30:54.3006|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 08:30:54.3546|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 08:30:54.9387|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 08:32:29.2321|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 08:32:29.2411|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 08:32:29.5351|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 08:32:50.5132|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 08:32:50.5282|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 08:32:50.7462|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 08:32:52.9945|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 08:32:53.0265|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 08:32:53.0675|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 08:33:15.0027|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 08:34:09.2681|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 08:45:09.3401|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 08:52:43.1595|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 08:52:43.1755|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 08:52:43.2395|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 08:52:45.6777|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 08:52:45.7107|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 08:52:45.7297|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 08:52:55.7107|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 08:54:33.9565|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 08:54:35.4867|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 08:55:55.7337|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 09:11:14.6666|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 09:11:14.6836|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 09:11:14.7846|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 09:11:17.8349|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 09:11:17.8679|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 09:11:17.8749|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 09:11:33.0644|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 09:17:23.4655|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 09:17:23.4825|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 09:17:23.5495|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 09:17:25.8787|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 09:17:25.9117|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 09:17:25.9297|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 09:17:39.1521|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 09:19:57.2139|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 09:19:57.2239|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 09:19:57.3779|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 09:20:10.3052|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 09:20:10.3382|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 09:20:10.3452|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 09:20:24.2316|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 09:20:24.2496|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 09:20:24.3496|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 09:21:27.9059|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 09:21:27.9139|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 09:21:28.0469|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 09:21:28.5660|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 09:21:28.5990|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 09:21:28.6170|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 09:21:46.2128|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 09:22:21.9593|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 09:25:11.5143|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 09:25:11.5203|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 09:25:11.5973|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 09:25:13.8645|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 09:25:13.8965|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 09:25:13.9145|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 09:25:23.9995|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 09:27:22.1954|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 09:27:22.2124|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 09:27:22.2824|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 09:27:53.0144|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 09:27:53.0214|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 09:27:53.0564|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 09:28:41.4943|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 09:28:41.5103|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 09:28:41.5833|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 09:31:16.1617|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 09:31:16.1777|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 09:31:16.2708|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 09:32:17.7059|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 09:32:17.7219|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 09:32:17.8049|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 09:32:29.2961|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 09:35:02.6914|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 09:35:02.7084|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 09:35:02.7924|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 09:35:03.2765|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 09:40:46.9778|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 09:40:46.9948|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 09:40:47.0668|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 09:40:58.4990|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 09:43:34.5016|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 09:43:34.5236|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 09:43:34.6366|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 09:44:17.9649|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 09:53:51.3623|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 09:53:51.3793|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 09:53:51.4603|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 09:54:41.6503|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 10:05:27.9319|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 10:16:51.8463|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 10:24:32.5384|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 10:32:10.5561|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 10:32:10.5731|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 10:32:10.6562|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 10:32:11.1842|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 10:32:41.6923|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 10:32:41.6983|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 10:32:41.7843|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 10:36:17.4408|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 10:37:11.8013|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 10:38:47.4578|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 10:39:00.2961|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 10:39:16.1307|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 10:39:22.9234|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 10:39:25.1656|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 10:41:02.6724|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 10:49:38.1519|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 10:49:38.1689|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 10:49:38.2419|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 10:49:38.7750|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 10:50:41.1082|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 11:01:14.4595|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 11:01:14.4945|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 11:01:14.6825|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 11:01:31.5222|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 11:09:21.7062|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 11:09:21.7372|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 11:09:21.7572|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 11:09:32.9404|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 11:10:27.7488|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 11:10:38.0729|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 11:10:48.4839|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 11:42:49.9382|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 11:42:49.9812|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 11:44:04.7322|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 11:44:04.7632|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-10-18 11:44:04.9932|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-18 11:44:05.7572|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-10-18 16:23:47.7809|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-18 16:23:49.0170|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-21 08:13:29.6898|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-21 08:13:31.0708|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-21 08:14:12.9058|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-21 08:14:14.0438|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-23 13:20:46.7702|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-23 13:20:48.0473|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-25 12:52:49.1671|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-25 12:52:50.3822|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-10-29 12:06:18.4804|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-10-29 12:06:19.8004|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-11-05 14:58:58.4594|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-11-05 14:58:59.7124|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-11-06 07:44:10.5160|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-11-06 07:44:12.3670|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-11-18 12:25:35.8470|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-11-18 12:25:49.9444|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-11-20 13:17:29.2689|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-11-20 13:17:31.1369|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-11-20 13:22:27.3389|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-11-20 13:22:28.4879|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-11-20 13:24:28.1449|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-11-20 13:24:29.8789|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-11-20 13:26:34.5879|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-11-20 13:26:35.9619|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-11-20 13:30:07.3276|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-11-20 13:30:08.5868|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-11-20 13:31:47.9487|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-11-20 13:31:49.2188|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-11-20 13:35:10.5940|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-11-20 13:35:11.9791|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-11-20 13:37:06.2075|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-11-20 13:37:07.3136|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-11-20 13:38:14.0683|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-11-20 13:38:15.1554|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-11-20 13:40:39.2258|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-11-20 13:41:22.2391|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-11-20 13:41:22.2551|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-11-20 13:41:22.3821|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-11-20 13:45:51.8621|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-11-20 13:45:51.8861|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-11-20 13:45:52.0571|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-11-20 13:51:18.2517|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-11-20 13:51:18.2677|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-11-20 13:51:18.2967|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-11-20 13:51:18.6698|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-11-20 13:53:09.9987|TRACE|PerformersEval.MvcApplication|Enter ::Application_Start
+2013-11-20 13:53:10.0137|TRACE|PerformersEval.MvcApplication|::Application_Start calls WebSecurity.InitializeDatabaseConnection
+2013-11-20 13:53:10.1007|TRACE|PerformersEval.MvcApplication|::Application_Start no calls to InitializeDatabaseConnection
+2013-11-20 13:53:10.4237|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-11-20 13:59:05.2097|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-11-20 14:00:50.6287|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-11-20 14:00:54.7397|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-11-20 14:01:09.4087|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index
+2013-11-20 14:03:53.4867|INFO|PerformersEval.Controllers.FormsStatusController|Enter FormsStatusController::Index

@@ -1,0 +1,40 @@
+﻿@using PerformersEval.Models;
+
+@model IEnumerable<PerformersEval.Models.SubW9>
+
+@{
+    ViewBag.Title = "List of  Sub W-9's";
+    
+    if (TempData["STATUS"] != null)
+    {   
+        <h3 style="color:red">@TempData["STATUS"]</h3>
+    }
+}
+
+
+<table class="noborder">
+    <tr>
+        <th style="text-align:left">
+            @Html.DisplayNameFor(model => model.TIN)
+        </th>
+        <th  style="text-align:left">
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(i => item.TIN)
+            </td>
+            <td>
+                @Html.DisplayFor(i => item.Name)
+            </td>
+            <td>
+                @Html.ActionLink("View", "Details", new { id=item.SubW9ID })
+            </td>
+        </tr>
+    }
+
+</table>

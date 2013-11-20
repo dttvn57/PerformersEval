@@ -1,0 +1,40 @@
+﻿@using PerformersEval.Models;
+
+@model IEnumerable<PerformersEval.Models.Vendor>
+
+@{
+    ViewBag.Title = "List of Vendors";
+    
+    if (TempData["STATUS"] != null)
+    {   
+        <h3 style="color:red">@TempData["STATUS"]</h3>
+    }
+}
+
+
+<table class="noborder">
+    <tr>
+        <th style="text-align:left">
+            @Html.DisplayNameFor(model => model.Vendor_FederalTaxID)
+        </th>
+        <th  style="text-align:left">
+            @Html.DisplayNameFor(model => model.Vendor_FullName)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(i => item.Vendor_FederalTaxID)
+            </td>
+            <td>
+                @Html.DisplayFor(i => item.Vendor_FullName)
+            </td>
+            <td>
+                @Html.ActionLink("View", "Details", new { id=item.VendorID })
+            </td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,40 @@
+﻿@using PerformersEval.Models;
+
+@model IEnumerable<PerformersEval.Models.Performer>
+
+@{
+    ViewBag.Title = "List of Performers";
+    
+    if (TempData["STATUS"] != null)
+    {   
+        <h3 style="color:red">@TempData["STATUS"]</h3>
+    }
+}
+
+
+<table class="noborder">
+    <tr>
+        <th style="text-align:left">
+            @Html.DisplayNameFor(model => model.FullName)
+        </th>
+        <th  style="text-align:left">
+            @Html.DisplayNameFor(model => model.PerformerEmail)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(i => item.FullName)
+            </td>
+            <td>
+                @Html.DisplayFor(i => item.PerformerEmail)
+            </td>
+            <td>
+                @Html.ActionLink("View", "Details", new { id=item.PerformerID })
+            </td>
+        </tr>
+    }
+
+</table>

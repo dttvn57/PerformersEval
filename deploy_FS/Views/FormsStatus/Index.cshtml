@@ -1,0 +1,325 @@
+﻿@using PerformersEval.Models;
+
+@model IEnumerable<PerformersEval.Models.FormsStatus>
+
+@{
+    ViewBag.Title = "Forms Status";
+}
+
+@*
+    @if (TempData["STATUS"] != null)
+    {   
+        <h3 style="color:red">@TempData["STATUS"]</h3>
+    }
+*@
+
+@if (!(Model != null && Model.Count() > 0 && Model.First().CreatedByUser == WebSecurity.CurrentUserName))
+{
+    if (Model.Count() == 0)
+    { 
+        
+        using (Html.BeginForm("Create", "Vendor", FormMethod.Get))
+        { 
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(false)
+
+            @*
+            <table style="width:40%; border:solid; border-width:1px;">
+                <colgroup>
+                        <col style="width:15%;"/>
+                        <col style="width:15%;"/>
+                </colgroup>
+
+                <tr>
+                    <td colspan="2" style="text-align: left">Enter the Taxpayer Identification Number (TIN):</td>
+                </tr>
+                <tr>
+                    @if (Model != null && Model.Count() == 1)
+                    {
+                        var modelTIN = Model.First().TIN;
+                        <td><span><input type="text" value=@modelTIN required name="TIN"/></span></td>                
+                    }
+                    else
+                    {
+                        <td><span><input type="text" required name="TIN"/></span></td>
+                    }
+                    <td>(no dash)</td>
+                </tr>    
+                <tr>
+                   <td colspan="2"><input type="submit" value="Check Status" /></td>
+                </tr>  
+            </table>
+
+        }        
+        *@
+        <table > 
+            <colgroup>
+                <col style="width:2%" />
+                <col style="width:5%" />
+                <col style="width:10%" />
+                <col style="width:10%" />
+            </colgroup>
+    
+            <tr>
+                <th style="text-align:left" colspan="4">Enter the tax ID and specify if it's a Federal Tax ID or Social Security Number</th>
+            </tr>
+            <tr>
+                <td style="text-align:right">
+                    @Html.RadioButton("isChecked", true, new { id = "FEIN" ,required = "required"})
+                </td>
+                <td colspan="3" style="text-align:left">
+                    @Html.Label("FEIN", "Federal Tax ID")
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.RadioButton("isChecked", false, new { id = "SSN", required = "required" })
+                </td>
+                <td colspan="3" style="text-align:left">
+                    @Html.Label("SSN", "Social Security Number")
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td colspan="1"><span>@Html.TextBox("s", null, htmlAttributes: new { maxlength="9" })</span></td>
+                <td>(no dash please)</td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><input type="submit" value="Start Create Forms" /></td>
+            </tr>  
+
+
+            @*
+
+            <tr>
+                <td style="padding-left:6%">
+                     @Html.RadioButton("s1", true, true)
+                </td>
+                <td style="text-align:left">@Html.Label("FEIN", "Federal Tax ID")</td>
+            </tr>
+    
+            <tr>
+                <td style="padding-left:6%">
+                     @Html.RadioButton("s2", false, false)<
+                </td>
+                <td style="text-align:left">@Html.Label("SSN", "Social Security Number")</td>
+            </tr>
+            *@
+    
+        </table>
+
+            
+            @*
+        <legend></legend>
+        <b>@Html.ActionLink("Create New Vendor", "Create", "Vendor")</b>
+            *@
+        }
+    }
+}
+else
+{
+    if (TempData["STATUS"] != null)
+    {   
+        <h3 style="color:red">@TempData["STATUS"]</h3>
+    }
+
+}
+
+<table style="border: 0 none;">
+    <colgroup>
+        @for (int i = 0; i < 25; i++)
+        { 
+            <col style="width:4%;"/>
+        }
+    </colgroup>
+
+    <th colspan="2" style="text-align:left">Name</th>
+    <td colspan="2"></td>
+    <th colspan="2" style="text-align:left">Vendor</th>
+    <td colspan="1"></td>
+    <th colspan="2" style="text-align:left">Sub W-9</th>
+    <td colspan="1"></td>
+    <th colspan="4" style="text-align:left">Service Agreement</th>
+    <td colspan="1"></td>
+    <th colspan="5" style="text-align:left">Auto Insurance</th>
+    @*
+    <td colspan="1"></td>
+    <th colspan="2" style="text-align:left">Invoice</th>
+    *@
+</table>    
+
+@if (Model != null && Model.Count() > 0)
+{ 
+    if (TempData["STATUS"] != null)
+    {
+        TempData["STATUS"] = null;      @* reset so _FormsStatusView can return the correct records *@
+    }
+        
+    @Html.Partial("_FormsStatusView", Model);
+}
+
+ @*
+   @:<strong>Check Forms Status:</strong>
+
+    @:<br />
+@:<br />    
+@:OR
+@:<br />    
+@:<br />
+}
+
+@{
+    if (TempData["STATUS"] != null)
+    {   
+        <h3 style="color:red">@TempData["STATUS"]</h3>
+    }
+
+    @:<strong>Check Forms Status:</strong>
+}
+
+using (Ajax.BeginForm("Status",
+    new AjaxOptions
+    {
+        HttpMethod = "GET",
+        InsertionMode = InsertionMode.Replace,
+        UpdateTargetId = "FormsStatusList"
+    }))
+{ 
+    @Html.ValidationSummary(false)
+
+    <table style="width:40%; border:solid; border-width:1px;">
+        <colgroup>
+                <col style="width:15%;"/>
+                <col style="width:15%;"/>
+        </colgroup>
+
+        <tr>
+            <td colspan="2" style="text-align: left">Enter the Taxpayer Identification Number (TIN):</td>
+        </tr>
+        <tr>
+            @if (Model != null && Model.Count() == 1)
+            {
+                var modelTIN = Model.First().TIN;
+                <td><span><input type="text" value=@modelTIN required name="s"/></span></td>                
+            }
+            else
+            {
+                <td><span><input type="text" name="s"/></span></td>
+            }
+            <td>(no dash)</td>
+        </tr>    
+        <tr>
+           <td colspan="2"><input type="submit" value="Check Status" /></td>
+        </tr>  
+    </table>
+}
+    
+<br /><br />
+<table style="border: 0 none;">
+    <colgroup>
+        @for (int i = 0; i < 25; i++)
+        { 
+            <col style="width:4%;"/>
+        }
+    </colgroup>
+
+    <th colspan="2" style="text-align:left">Name</th>
+    <td colspan="2"></td>
+    <th colspan="2" style="text-align:left">Vendor</th>
+    <td colspan="1"></td>
+    <th colspan="2" style="text-align:left">Sub W-9</th>
+    <td colspan="1"></td>
+    <th colspan="4" style="text-align:left">Service Agreement</th>
+    <td colspan="1"></td>
+    <th colspan="5" style="text-align:left">Auto Insurance</th>
+    @*
+    <td colspan="1"></td>
+    <th colspan="2" style="text-align:left">Invoice</th>
+    * @
+</table>    
+<div id="FormsStatusList">
+    @if (Model != null && Model.Count() > 0)
+    { 
+        if (TempData["STATUS"] != null)
+        {
+            TempData["STATUS"] = null;      @* reset so _FormsStatusView can return the correct records * @
+        }
+        
+        @Html.Partial("_FormsStatusView", Model);
+    }
+</div>
+
+@* -------------------------------------------------------------------------------
+}
+
+@using (Ajax.BeginForm("Status",
+    new AjaxOptions
+    {
+        HttpMethod = "GET",
+        InsertionMode = InsertionMode.Replace,
+        UpdateTargetId = "FormsStatusList"
+    }))
+{ 
+    <table style="width:60%; border:solid; border-width:1px;">
+        <colgroup>
+                <col style="width:5%;"/>
+                <col style="width:25%;"/>
+        </colgroup>
+
+        <tr>
+            <td colspan="2" style="text-align: left">Enter the following info <b>or</b> leave them blank to create forms and click on "Check Status":</td>
+        </tr>
+        <tr>
+            <td style="text-align: right;">Name:</td>
+            <td><span><input type="text" name="PerformerName"/></span></td>
+        </tr>  
+        <tr>
+            <td style="text-align: right;"><b>And</b></td>
+        </tr>  
+        <tr>
+            <td style="text-align: right;">Email:</td>
+            <td><span><input type="text" name="PerformerEmail"/></span></td>
+        </tr>    
+        <tr>
+           <td colspan="2"><input type="submit" value="Check Status" /></td>
+        </tr>  
+    </table>
+}
+<br /><br />
+<table style="border: 0 none;">
+    <colgroup>
+        @for (int i = 0; i < 25; i++)
+        { 
+            <col style="width:4%;"/>
+        }
+    </colgroup>
+
+    <th colspan="2" style="text-align:left">Performer</th>
+    <td colspan="2"></td>
+    <th colspan="2" style="text-align:left">Vendor</th>
+    <td colspan="1"></td>
+    <th colspan="2" style="text-align:left">Sub W-9</th>
+    <td colspan="1"></td>
+    <th colspan="4" style="text-align:left">Service Agreement</th>
+    <td colspan="1"></td>
+    <th colspan="2" style="text-align:left">Auto Ins.</th>
+    <td colspan="1"></td>
+    <th colspan="2" style="text-align:left">Invoice</th>
+</table>        
+        
+<div id="FormsStatusList">
+    @if (Model != null)
+    { 
+         @Html.Partial("_FormsStatusView", Model);
+        @*
+        foreach (var item in @Model)
+        {
+            @Html.Partial("_FormsStatusView", item);
+        }
+        * @
+    }
+</div>
+
+------------------------------------------------------------------------------- *@

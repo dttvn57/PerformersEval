@@ -1,0 +1,4 @@
+2013-10-04 09:05:06.0439|INFO|PerformersEval.Migrations.Configuration|Enter Configuration::SeedMembership calls WebSecurity.InitializeDatabaseConnection
+2013-10-04 09:05:06.0549|INFO|PerformersEval.Migrations.Configuration|Configuration::SeedMembership calls WebSecurity.InitializeDatabaseConnection
+2013-10-07 10:00:38.2278|INFO|PerformersEval.Migrations.Configuration|Enter Configuration::SeedMembership calls WebSecurity.InitializeDatabaseConnection
+2013-10-07 10:00:38.2338|INFO|PerformersEval.Migrations.Configuration|Configuration::SeedMembership calls WebSecurity.InitializeDatabaseConnection

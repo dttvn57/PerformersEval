@@ -1,0 +1,324 @@
+﻿@model PerformersEval.Models.SubW9
+
+@{
+    Layout = "";
+}
+<div  style="font-size:1.0em" id="inv_container" style="position: relative" >
+<div style="position: absolute; top:5px ;right:15px; border:solid; border-width: 1px;"><img src="~/Images/tin-print.png" width="100" height="400"></div>
+    
+   
+<div>1110 - W9</div>
+<div>Rev 10/04</div>
+<div style="text-align:center; font-size:1.25em"><strong>COUNTY OF ALAMEDA</strong></div>
+<div style="text-align:center; font-size:1.25em">1221 OAK STREET, ROOM 249, OAKLAND, CA 94612</div>
+<div style="text-align:center; font-size:1.25em"><strong>Substitute IRS Form W-9</strong></div>
+<div style="text-align:center; font-size:1.25em">Request for Taxpayer Identification Number and Certification</div>
+<br/>
+<div style="text-align:left;"><i>The purpose of this form is to obtain or verify the accuracy of inofrmation regarding Alameda County's payees.</i></div>
+<div style="text-align:left;"><i>ALL, payees must have an accurate W-9 on file in the Auditor-Controller's office in order to be paid.</i></div>
+<div style="text-align:left;"><i>If you fail to furnish your correct TIN, you could be subject to a penalty.</i></div>
+<div style="text-align:left;"><b><i>The form must be <u>completed,</u> even if the information shown at the bottom of the form is accurate.</i></b></div>
+<br />
+<div><b>Please print or type.</b> Do not send to IRS. Return to Alameda County in the envelope provided.</div>
+
+<table style="width:100%; border-collapse: collapse; border:solid; border-width:1px"  style="font-size:1.0em"> 
+    <tr>
+        <td>&nbsp;&nbsp;Name on record with IRS or Social Security Administration:</td>
+    </tr>
+    <tr>
+        <td style="border-bottom:solid; border-width:1px"><span>@Html.LabelForModel(Model.Name)</span></td>
+    </tr>
+
+    <tr>
+        <td >&nbsp;&nbsp;All DBA(s) <u>or</u> Invoice Name(s) (If different from the above name) - use attachments if neccessary:</td>
+    </tr>
+    <tr>
+        @if (Model.OtherNames != null)
+        {
+            <td style="border-bottom:solid; border-width:1px"><span>@Html.LabelForModel(Model.OtherNames)</span></td>
+        }
+        else
+        { 
+            <td style="border-bottom:solid; border-width:1px"><hr></td>
+        }
+    </tr>
+
+    <tr >
+        <td >&nbsp;&nbsp;Address for Correspondence or 1099 (we will take the remittance address if different, from the invoice)</td>
+    </tr>
+    <tr>
+        @if (Model.Addr != null)
+        {
+            <td><span>@Html.LabelForModel(Model.Addr)</span></td>
+        }
+        else
+        { 
+            <td><hr></td>
+        }
+    </tr>
+</table>
+
+
+<table style="width:100%; border-collapse: collapse; border:solid; border-width:1px"  style="font-size:1.0em>
+    <colgroup>
+        <col style="width:30%;"/>
+        <col style="width:40%;"/>
+        <col style="width:30%;"/>
+    </colgroup>
+
+    <tr>
+        <th colspan="3" style="text-align:center">TAXPAYER IDENTIFICATION NUMBER (TIN)</th>
+    </tr>
+    <tr>
+         <td colspan="3" class="leftpadding">&nbsp;&nbsp;You may enter <u>only</u> one TIN and it must be the type of TIN (SSN or EIN) that is appropriate to your type of entity. If you do not have a TIN, or for further<br />
+            information, see the instruction on the second page.</td>
+   </tr>
+
+    <tr>
+         <th style="text-align: right; ">SOCIAL SECURITY NUMBER:&nbsp;&nbsp;</th>
+        <td style="text-align: left;"  class="leftpadding">
+            @Html.TextBoxFor(m => m.SSN1, htmlAttributes: new {disabled = "disabled", style="width:1em", maxlength="1"})
+            @Html.TextBoxFor(m => m.SSN2, htmlAttributes: new {disabled = "disabled", style="width:1em", maxlength="1"})
+            @Html.TextBoxFor(m => m.SSN3, htmlAttributes: new {disabled = "disabled", style="width:1em", maxlength="1"})&nbsp;-&nbsp;
+            @Html.TextBoxFor(m => m.SSN4, htmlAttributes: new {disabled = "disabled", style="width:1em", maxlength="1"})
+            @Html.TextBoxFor(m => m.SSN5, htmlAttributes: new {disabled = "disabled", style="width:1em", maxlength="1"})&nbsp;-&nbsp;
+            @Html.TextBoxFor(m => m.SSN6, htmlAttributes: new {disabled = "disabled", style="width:1em", maxlength="1"})
+            @Html.TextBoxFor(m => m.SSN7, htmlAttributes: new {disabled = "disabled", style="width:1em", maxlength="1"})
+            @Html.TextBoxFor(m => m.SSN8, htmlAttributes: new {disabled = "disabled", style="width:1em", maxlength="1"})
+            @Html.TextBoxFor(m => m.SSN9, htmlAttributes: new {disabled = "disabled", style="width:1em", maxlength="1"})
+        </td>
+        <td rowspan="3"><div style="text-align:center; border:solid;border-width:1px; background-color:lightgray; margin-left:60px; margin-right:60px;">ONLY <u>ONE</u><br />NUMBER WILL<br />BE ACCEPTED</div></td>
+    </tr>
+
+    <tr>
+         <th style="text-align: center; ">OR</th>
+        <th style="text-align: left;" > </th>
+    </tr>
+
+    <tr>
+         <th style="text-align: right; ">EMPLOYER ID NUMBER:&nbsp;&nbsp;</th>
+        <th style="text-align: left;" >
+            @Html.TextBoxFor(m => m.EIN1, htmlAttributes: new {disabled = "disabled", style="width:1em", maxlength="1"})
+            @Html.TextBoxFor(m => m.EIN2, htmlAttributes: new {disabled = "disabled", style="width:1em", maxlength="1"})&nbsp;-&nbsp;
+            @Html.TextBoxFor(m => m.EIN3, htmlAttributes: new {disabled = "disabled", style="width:1em", maxlength="1"})
+            @Html.TextBoxFor(m => m.EIN4, htmlAttributes: new {disabled = "disabled", style="width:1em", maxlength="1"})
+            @Html.TextBoxFor(m => m.EIN5, htmlAttributes: new {disabled = "disabled", style="width:1em", maxlength="1"})
+            @Html.TextBoxFor(m => m.EIN6, htmlAttributes: new {disabled = "disabled", style="width:1em", maxlength="1"})
+            @Html.TextBoxFor(m => m.EIN7, htmlAttributes: new {disabled = "disabled", style="width:1em", maxlength="1"})
+            @Html.TextBoxFor(m => m.EIN8, htmlAttributes: new {disabled = "disabled", style="width:1em", maxlength="1"})
+            @Html.TextBoxFor(m => m.EIN9, htmlAttributes: new {disabled = "disabled", style="width:1em", maxlength="1"})
+        </th>
+    </tr>
+
+    <tr>
+         <td colspan="3" class="leftpadding">&nbsp;&nbsp;TIN <u>MUST</u> BE ENTERED REGARDLESS OF TYPE OF ENTITY (IE, NON-PROFIT, RETAIL CORPORATION, ETC)</td>
+    </tr>
+</table>
+
+<!-- Type of Entity  -->
+<table style="width:100%; border-collapse: collapse; border:solid; border-width:1px"  style="font-size:1.0em>
+    <colgroup>
+            <col style="width:50%;" /> 
+            <col style="width:50%;" /> 
+    </colgroup>
+
+    <th colspan="2" style="border-bottom:solid; border-width:1px; text-align:center;"><b>Type of Entity (Please check only one)</b></th>
+
+    <tr>
+        <td style="border-right:solid; border-width:1px" >@Html.CheckBoxFor(m => m.Individual, htmlAttributes: new { disabled = "disabled" })&nbsp;&nbsp;INDIVIDUAL</td>
+        <td >@Html.CheckBoxFor(m => m.SoleProprietor, htmlAttributes: new { disabled = "disabled" })&nbsp;&nbsp;SOLE PROPRIETOR</td>
+    </tr>
+    <tr style="border:solid; border-width:1px;">
+        <td style="border-right:solid; border-width:1px" >@Html.CheckBoxFor(m => m.Partnership, htmlAttributes: new { disabled = "disabled" })&nbsp;&nbsp;PARTNERSHIP</td>
+        <td >@Html.CheckBoxFor(m => m.Corporation, htmlAttributes: new { disabled = "disabled" })&nbsp;&nbsp;CORPORATION</td>
+    </tr>
+    <tr style="border:solid; border-width:1px;">
+        <td style="border-right:solid; border-width:1px" >@Html.CheckBoxFor(m => m.TaxExempted, htmlAttributes: new { disabled = "disabled" })&nbsp;&nbsp;TAX-EXEMPT ORGANIZATION UNDER SECTION 501(C)</td>
+        <td >@Html.CheckBoxFor(m => m.GovOrTrust, htmlAttributes: new { disabled = "disabled" })&nbsp;&nbsp;GOVERMENT OR TRUST (SPECIFY)</td>
+    </tr>
+</table>
+
+<!-- CHECK THE BOXES THAT APPLY TO <b>Alameda County's -->
+@*<div style="border-style:solid; border-width:1px;">*@
+@*<table class="noborder">*@
+<table style="width:100%; border-collapse: collapse; border:solid; border-width:1px"  style="font-size:0.8em"> 
+    <colgroup>
+        <col style="width:22%;" /> 
+        <col style="width:18%;" /> 
+        <col style="width:20%;" /> 
+        <col style="width:40%;" /> 
+    </colgroup>
+
+    <tr>
+        <td colspan="4" style="border-bottom:solid; border-width:1px; padding-left: 10px;">CHECK THE BOXES THAT APPLY TO <b>Alameda County's</b> PAYMENT TO YOU:
+        </td>
+    </tr>
+
+    <tr>
+        <td >@Html.CheckBoxFor(m => m.GoodsOnly, htmlAttributes: new { disabled = "disabled" })&nbsp;&nbsp;GOOD ONLY</td>
+        <td >@Html.CheckBoxFor(m => m.GoodsAndServices, htmlAttributes: new { disabled = "disabled" })&nbsp;&nbsp;GOODS AND SERVICES</td>
+        <td >@Html.CheckBoxFor(m => m.RentsLeases, htmlAttributes: new { disabled = "disabled" })&nbsp;&nbsp;RENTS / LEASES</td>
+        <td >@Html.CheckBoxFor(m => m.RentsLeasesAsAgent, htmlAttributes: new { disabled = "disabled" })&nbsp;&nbsp;RENTS / LEASES PAID TO YOU AS THE AGENT</td>
+    </tr>
+    <tr>
+        <td " colspan="2">@Html.CheckBoxFor(m => m.MedicalService, htmlAttributes: new { disabled = "disabled" })&nbsp;&nbsp;MEDICAL AND HEALTHCARE SERVICES</td>
+        <td ">@Html.CheckBoxFor(m => m.LegalService, htmlAttributes: new { disabled = "disabled" })&nbsp;&nbsp;LEGAL SERVICES</td>
+        <td ">@Html.CheckBoxFor(m => m.Settlement, htmlAttributes: new { disabled = "disabled" })&nbsp;&nbsp;SETTLEMENT</td>
+    </tr>
+    <tr>
+        <td >@Html.CheckBoxFor(m => m.OtherServices, htmlAttributes: new { disabled = "disabled" })&nbsp;&nbsp;OTHER SERVICES - DESCRIBE:
+        </td>
+        <td colspan="3">
+            @if (Model.OtherServices_Desc != null)
+            {
+                <span>@Html.LabelForModel(Model.OtherServices_Desc)</span>
+            }
+            else
+            { 
+                <span><hr></span>
+            }
+        </td>
+    </tr>
+</table>
+@*</div>*@
+      
+<div style="border-style:solid; border-width:1px;">
+<table class="noborder">
+      <tr>
+        <td class="thinborderbottom" colspan="4" >&nbsp;&nbsp;@Html.CheckBoxFor(m => m.ExemptFromBackupWithHolding, htmlAttributes: new { disabled = "disabled" })&nbsp;&nbsp;CHECK THIS BOX if you are exempt from backup withholding. Entities exempt from backup withholding are listed on the second page.</td>
+    </tr>
+
+    <tr>
+        <td style="padding-left: 10px;"  colspan="4" >Certification - Under penalties of perjury, I certify that:<br />
+            (1) The number shown on this form is my correct taxpayer information number (or I am waiting for a number to be issued to me).<br />
+            (2) I am not subject to backup withholding because (a) I am exempt from backup withholding, or (b) I have not been notified by the IRS that I am subject to backup withholding as a result of failure to report all interest of dividends, or (c) the IRS has notified me that I am no longer subject to backup withholding. (<a href="~/Images/w9instructions.pdf" target="_blank"><b>For instructions, see the second page.</b></a>)
+        </td>
+    </tr>
+</table>
+</div>
+
+
+<table style="table-layout: fixed; width:100%" >
+    <colgroup>
+        <col style="width:50%;" /> 
+        <col style="width:50%;" /> 
+    </colgroup>
+
+    <tr>
+        <td style="vertical-align: top;">
+            The purpose of this form is to verify the accuracy of the information we currently have on our records and to obtain your certification for our files. PLEASE DON’T MARK THE LABEL BELOW; WE USE IT TO VERIFY THE ACCURACY OF OUR CURRENT INFORMATION.
+       </td>
+       <td style="vertical-align: top;">
+                <table style="font-size:1.0em; border-style:solid; border-width:1px; table-layout: fixed; width:100%">   <!-- class="noborder"> -->
+                    <colgroup>
+                        <col style="width:15%; "/> 
+                        <col style="width:45%;"/> 
+                        <col style="width:1%; " /> 
+                        <col style="width:9%; " /> 
+                        <col style="width:29%;" /> 
+                    </colgroup>
+
+                   <tr>
+                       <td colspan="5">&nbsp;&nbsp;Please sign here (required).<td />
+                    </tr>
+                    <tr>
+                        <td colspan="5">&nbsp;&nbsp;Check if this signature applies to Certification (1) only)&nbsp;&nbsp;@Html.CheckBoxFor(m => m.SigAppliesToCertification, htmlAttributes: new { disabled = "disabled" })<td />
+                    </tr>
+                    <tr><td><br /></td></tr>
+
+                   <tr>
+                        <td>&nbsp;&nbsp;Signature</td>
+                       <td colspan="4">
+                            @if (Model.SignedSignature != null)
+                            {
+                                <span>@Html.LabelForModel(Model.SignedSignature)</span>
+                            }
+                            else
+                            { 
+                                <span><hr></span>
+                            }
+                        <td />
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;Print name</td>
+                       <td colspan="4">
+                            @if (Model.SignedPrintName != null)
+                            {
+                                <span>@Html.LabelForModel(Model.SignedPrintName)</span>
+                            }
+                            else
+                            { 
+                                <span><hr></span>
+                            }
+                        <td />
+                    </tr>
+                   <tr>
+                        <td>&nbsp;&nbsp;Title</td>
+                        <td >
+                            @if (Model.SignedTitle != null)
+                            {
+                                @Html.LabelForModel(Model.SignedTitle)
+                            }
+                            else
+                            { 
+                                <span><hr></span>
+                            }
+                        
+                        <td />
+
+                         <td style="text-align: right">Date&nbsp;&nbsp;</td>
+                        <td>
+                           @if (Model.SignedDate != null)
+                            {
+                                @Html.LabelForModel(Model.SignedDate)
+                            }
+                            else
+                            { 
+                                <span><hr></span>
+                            }
+                        <td />
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;Phone Number</td>
+                        <td colspan="4">
+                            @if (Model.SignedPhone != null)
+                            {
+                                <span>@Html.LabelForModel(Model.SignedPhone)</span>
+                            }
+                            else
+                            { 
+                                <span><hr></span>
+                            }
+                        <td />
+                    </tr>
+
+                    <tr>
+                        <td>&nbsp;&nbsp;Fax Number</td>
+                        <td colspan="4">
+                            @if (Model.SignedFAX != null)
+                            {
+                                <span>@Html.LabelForModel(Model.SignedFAX)</span>
+                            }
+                            else
+                            { 
+                                <span><hr></span>
+                            }
+                        <td />
+                    </tr>
+                   <tr>
+                        <td>&nbsp;&nbsp;e-mail address</td>
+                        <td colspan="4">
+                            @if (Model.SignedEmail != null)
+                            {
+                                <span>@Html.LabelForModel(Model.SignedEmail)</span>
+                            }
+                            else
+                            { 
+                                <span><hr></span>
+                            }
+                        <td />
+                    </tr>
+               </table>
+      </td>
+    </tr>
+</table>

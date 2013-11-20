@@ -1,0 +1,17 @@
+﻿@using PerformersEval.Models;
+
+@model PerformersEval.Models.FormsStatus
+
+@{
+    ViewBag.Title = "Upload Auto Insurance";
+}
+
+@using (Html.BeginForm("UploadDocument", "FormsStatus", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{ 
+    @*
+    @Html.HiddenFor(model => model.TIN)
+    *@
+    @Html.Hidden("s", new { s = @Model.TIN })
+    <input type="file" name="file" />
+    <input type="submit" name="Submit" id="Submit" value="Upload Insurance" />
+}

@@ -1,0 +1,59 @@
+﻿@using PerformersEval.Models;
+
+@model PerformersEval.Models.Performer
+
+@{
+    ViewBag.Title = "Modify Service Agreement";
+}
+
+@*
+<p>
+    <b>@Html.ActionLink("Create New", "Create")</b>
+</p>
+
+Or
+*@
+@{
+    if (TempData["STATUS"] != null)
+     {   
+          <h3 style="color:red">@TempData["STATUS"]</h3>
+    
+          var performer = TempData["OBJECT"] as Performer;
+          if (performer != null)
+          {
+              Model.FullName = performer.FullName;
+              Model.PerformerEmail = performer.PerformerEmail;
+              Model.PerformerID = performer.PerformerID;
+          }
+     }
+}
+
+@using (Html.BeginForm("Edit", "Performer", FormMethod.Get)){
+    <table style="width:60%; border:solid; border-width:1px;">
+        <colgroup>
+                <col style="width:5%;"/>
+                <col style="width:25%;"/>
+        </colgroup>
+
+        <tr>
+            <td colspan="2" style="text-align: left">Enter the following info:</td>
+        </tr>
+        <tr>
+            <td style="text-align: right;">Name:</td>
+            <td><span>@Html.TextBoxFor(m => m.FullName, htmlAttributes: new { required = "required" })</span></td>
+        </tr>  
+        <tr>
+            <td style="text-align: right;"><b>And</b></td>
+        </tr>  
+        <tr>
+            <td style="text-align: right;">Email:</td>
+            <td><span>@Html.TextBoxFor(m => m.PerformerEmail, htmlAttributes: new { required = "required" })</span></td>
+        </tr>    
+        <tr>
+           <td colspan="2">and click on <input type="submit" value="Modify" /></td>
+        
+           @*<td colspan="2">and click on @Html.ActionLink("Modify", "Edit", new { FullName = @Model.FullName, Email = @Model.FullName })</td>*@
+
+        </tr>  
+    </table>
+}

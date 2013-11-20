@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "Welcome to Alameda County Library";
+}
+
+    @*<link rel="stylesheet" type="text/css" media="screen" href="screen.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="print.css" />*@
+
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>Welcome to Alameda County Library</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+
+            <p>
+                Here's where we explain to the user what needs to be accomplished.<br />
+                Here's where we explain to the user what needs to be accomplished.<br />
+                Here's where we explain to the user what needs to be accomplished.<br />
+                ..................................................................<br />
+                [A form can be accessed either through the top menu or through the Home Page here]
+            </p>
+
+        </div>
+    </section>
+}
+
+@* --------------------------------------------------------------
+@{
+    var performerFilled = true;
+}
+
+<h3>Please fill out the following forms:</h3>
+<fieldset>
+    <ol class="checkmark">
+        @if (@performerFilled == true)
+        {
+            <li class="check">
+                <h5>@Html.ActionLink("Performer's Service Agreement", "Index", "Performer")</h5>
+                This form is for .......<br />
+                [When a form is completely filled out and submitted, a checkmark is shown]
+            </li>
+        }
+        else
+        {
+            <li class="uncheck">
+                <h5>@Html.ActionLink("Performer's Service Agreement", "Index", "Performer")</h5>
+                This form is for .......<br />
+                [When a form is not filled out, a checkmark is not shown]
+            </li>
+        }
+
+        <li class="uncheck">
+            <h5>@Html.ActionLink("Vendor", "Index", "Vendor")</h5>
+            This form is for .......<br />
+            [When a form is not filled out, a checkmark is not shown]
+        </li>
+
+        <li class="uncheck">
+            <h5>@Html.ActionLink("Sub W-9", "Index", "W9")</h5>
+            This form is for .......
+        </li>
+    </ol>
+
+    <button type="button" disabled>Submit</button>
+    [When all required forms are filled out, the "Submit" button will be available]
+</fieldset>
+--------------------------------------------------------------------- *@

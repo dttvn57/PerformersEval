@@ -1,0 +1,47 @@
+﻿@using PerformersEval.Models;
+
+@model PerformersEval.Models.Vendor
+
+@{
+    ViewBag.Title = "Modify Vendor";
+}
+
+@*
+<p>
+    <b>@Html.ActionLink("Create New", "Create")</b>
+</p>
+
+Or
+*@
+@{
+    if (TempData["STATUS"] != null)
+     {   
+          <h3 style="color:red">@TempData["STATUS"]</h3>
+    
+         var vendor = TempData["OBJECT"] as Vendor;
+         if (vendor != null)
+          {
+              Model.Vendor_FederalTaxID = vendor.Vendor_FederalTaxID;
+              //Model.VendorID = vendor.VendorID;
+          }
+     }
+}
+
+@using (Html.BeginForm("Edit", "Vendor", FormMethod.Get)) {
+    <table style="width:35%; border:solid; border-width:1px;">
+        <colgroup>
+                <col style="width:20%;"/>
+                <col style="width:10%;"/>
+        </colgroup>
+
+        <tr>
+            <td colspan="2" style="text-align: left">Federal Tax ID:</td>
+            <td><span>@Html.TextBoxFor(m => m.Vendor_FederalTaxID, htmlAttributes: new { required = "required" })</span></td>
+        </tr>  
+
+        <tr>
+           <td colspan="2"><input type="submit" value="Modify" /></td>
+
+        </tr>  
+    </table>
+}

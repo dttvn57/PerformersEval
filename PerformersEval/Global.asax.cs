@@ -13,8 +13,8 @@ using NLog.Common;
 using System.Data.Entity.Migrations;
 using WebMatrix.WebData;
 
-using NLog;
-using PerformersEval.Migrations;
+//using NLog;
+//using PerformersEval.Migrations;
 
 namespace PerformersEval
 {
@@ -32,15 +32,16 @@ namespace PerformersEval
             //InternalLogger.LogLevel = NLog.LogLevel.Trace;
 
              //logger.Trace("Enter ::Application_Start");
-           var migrator = new DbMigrator(new Configuration());
-           migrator.Update();
+           //var migrator = new DbMigrator(new Configuration());
+           //migrator.Update();
 
             if (!WebSecurity.Initialized)
             {
                 //logger.Trace("::Application_Start calls WebSecurity.InitializeDatabaseConnection");
                 WebSecurity.InitializeDatabaseConnection("DefaultConnection",
-                    "UserProfile", "UserId", "UserName", autoCreateTables: true);
+                    "FIN_PE_UserProfile", "UserId", "UserName", autoCreateTables: true);
             }
+
             //logger.Trace("::Application_Start no calls to InitializeDatabaseConnection");
 
             AreaRegistration.RegisterAllAreas();
@@ -55,7 +56,7 @@ namespace PerformersEval
           //GlobalFilters.Filters.Add(new NotRequireSSLAttribute());
 
             //===========>>>> comment out if test locally AND comment all [Authorize], [RequiredHttps] from the Controllers
-         GlobalFilters.Filters.Add(new RequireHttpsAttribute());
+        // GlobalFilters.Filters.Add(new RequireHttpsAttribute());
 
             /***
                 Database.SetInitializer<SchoolDBContext>(new CreateDatabaseIfNotExists<SchoolDBContext>());

@@ -61,6 +61,8 @@ namespace PerformersEval.Controllers
 
                 string ext;
                 string fileName = Path.GetFileName(file.FileName);
+
+ 
                 int extInd = fileName.LastIndexOf('.');
                 if (extInd != -1)
                 {
@@ -71,10 +73,12 @@ namespace PerformersEval.Controllers
 
                 var path = Path.Combine(Server.MapPath("~/Images/"), fileName);
 
-               // WriteFileFromStream(file.InputStream, path);
+                // WriteFileFromStream(file.InputStream, path);
                 file.SaveAs(path);
 
 //TempData["STATUS"] = "Status: " + path;
+
+                var absPath = Request.Url.Scheme + "//:" + Request.Url.Host + "/Images/" + fileName;
 
                 var formsStatus = _db.AllFormsStatus.Where(w => w.TIN.Equals(s));  // any record that had been create by Vendor (check by using TIN)
                 try

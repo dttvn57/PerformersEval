@@ -11,6 +11,8 @@ using WebMatrix.WebData;
 //using PerformersEval.Filters;
 using PerformersEval.Models;
 using PerformersEval.DAL;
+using System.Net.Mail;
+using System.Configuration;
 
 namespace PerformersEval.Controllers
 {
@@ -83,7 +85,7 @@ namespace PerformersEval.Controllers
                 // Attempt to register the user
                 try
                 {
-                    WebSecurity.CreateUserAndAccount(model.UserName, model.Password);
+                    WebSecurity.CreateUserAndAccount(model.UserName, model.Password, new { EmailId = model.EmailId });  //, Details = model.Details });
                     WebSecurity.Login(model.UserName, model.Password);
 
                     var roles = (SimpleRoleProvider)Roles.Provider;
@@ -342,6 +344,173 @@ namespace PerformersEval.Controllers
             return PartialView("_RemoveExternalLoginsPartial", externalLogins);
         }
 
+        [AllowAnonymous]
+        public ActionResult ForgotPassword()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public ActionResult ForgotPassword(string UserName)
+        {
+            //check user existance
+            var user = Membership.GetUser(UserName);
+            if (user == null)
+            {
+                TempData["Message"] = "User Not exist.";
+            }
+            else
+            {
+                //generate password token
+                var token = WebSecurity.GeneratePasswordResetToken(UserName);
+                //create url with above token
+                var resetLink = "<a href='" + Url.Action("ResetPassword", "Account", new { un = UserName, rt = token }, "http") + "'>Reset Password</a>";
+                //get user emailid
+                PerformersDB db = new PerformersDB();
+                var emailid = (from i in db.UserProfiles
+                               where i.UserName == UserName
+                               select i.EmailId).FirstOrDefault();
+                //send mail
+                string subject = "Password Reset Token";
+                string body = "<b>Please find the Password Reset Token</b><br/>" + resetLink; //edit it
+                try
+                {
+                    SendEMail(emailid, subject, body);
+                    TempData["Message"] = "Mail Sent.";
+                }
+                catch (Exception ex)
+                {
+                    TempData["Message"] = "Error occured while sending email." + ex.Message;
+                }
+                //only for testing
+                //TempData["Message"] = resetLink;
+            }
+
+            return View();
+        }
+
+        [AllowAnonymous]
+        public ActionResult ResetPassword(string un, string rt)
+        {
+            PerformersDB db = new PerformersDB();
+
+            //TODO: Check the un and rt matching and then perform following
+            //get userid of received username
+            var userid = (from i in db.UserProfiles
+                          where i.UserName == un
+                          select i.UserId).FirstOrDefault();
+
+            //check userid and token matches
+            bool any = (from j in db.webpages_Memberships
+                        where (j.UserId == userid)
+                        && (j.PasswordVerificationToken == rt)
+                        //&& (j.PasswordVerificationTokenExpirationDate < DateTime.Now)
+                        select j).Any();
+
+            if (any == true)
+            {
+                //generate random password
+                string newpassword = GenerateRandomPassword(6);
+                //reset password
+                bool response = WebSecurity.ResetPassword(rt, newpassword);
+                if (response == true)
+                {
+                    //get user emailid to send password
+                    var emailid = (from i in db.UserProfiles
+                                   where i.UserName == un
+                                   select i.EmailId).FirstOrDefault();
+                    // send email
+                    string subject = "PerformersEval: New Password";
+                    string body = "<b>Here's the new password</b><br/>" + newpassword; //edit it
+                    try
+                    {
+                        SendEMail(emailid, subject, body);
+                        TempData["Message"] = "Mail Sent.";
+                    }
+                    catch (Exception ex)
+                    {
+                        TempData["Message"] = "Error occured while sending email." + ex.Message;
+                    }
+
+                    //display message
+                    //TempData["Message"] = "Your New Password Is: " + newpassword + ". Please store it in a safe place";        //"Success! Check email we sent. Your New Password Is " + newpassword;
+                }
+                else
+                {
+                    TempData["Message"] = "Hey, avoid random request on this page.";
+                }
+            }
+            else
+            {
+                TempData["Message"] = "Username and token not maching.";
+            }
+
+            return View("Login");
+        }
+        
+        //-------------------------------------------------------------------------------
+        private void SendEMail(string emailid, string subject, string body)
+        {
+            //SmtpClient client = new SmtpClient();
+            //client.DeliveryMethod = SmtpDeliveryMethod.Network;
+            //client.EnableSsl = true;
+            //client.Host = "smtp.gmail.com";
+            //client.Port = 587;
+
+            //System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("xxxxx@gmail.com", "xxxxx");
+            //client.UseDefaultCredentials = false;
+            //client.Credentials = credentials;
+
+            //MailMessage msg = new MailMessage();
+            //msg.From = new MailAddress("xxxxx@gmail.com");
+            //msg.To.Add(new MailAddress(emailid));
+
+            //msg.Subject = subject;
+            //msg.IsBodyHtml = true;
+            //msg.Body = body;
+
+            //client.Send(msg);
+
+            MailMessage message = new MailMessage();
+            message.From = new MailAddress("Performers-Notification@aclibrary.org", subject);
+            message.To.Add(new MailAddress(emailid));
+            message.Subject = subject;
+            message.Body = body;
+            message.IsBodyHtml = true;
+
+            SmtpClient client = new SmtpClient("bender.aclibrary.org", 25);
+
+            //client.UseDefaultCredentials = false;
+            client.EnableSsl = false;
+            //client.Credentials = new NetworkCredential("TestLogin", "TestPassword");
+            client.DeliveryMethod = SmtpDeliveryMethod.Network;
+            //client.EnableSsl = true;
+
+            try
+            {
+                client.Send(message);
+            }
+            catch (Exception e)
+            {
+                TempData["OBJECT"] = null;
+                TempData["STATUS"] = e.Message;
+            }
+        }
+
+        private string GenerateRandomPassword(int length)
+        {
+            string allowedChars = "abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNOPQRSTUVWXYZ0123456789!@$?_-*&#+";
+            char[] chars = new char[length];
+            Random rd = new Random();
+            for (int i = 0; i < length; i++)
+            {
+                chars[i] = allowedChars[rd.Next(0, allowedChars.Length)];
+            }
+            return new string(chars);
+        }
+        
         #region Helpers
         private ActionResult RedirectToLocal(string returnUrl)
         {

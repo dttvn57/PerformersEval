@@ -16,17 +16,27 @@
         <legend>Registration Form</legend>
         <ol>
             <li>
-                @Html.LabelFor(m => m.UserName)
-                @Html.TextBoxFor(m => m.UserName)
+                @Html.LabelFor(m => m.UserName)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                @Html.TextBoxFor(m => m.UserName, htmlAttributes: new { maxlength="25", style="width:10em" })
             </li>
             <li>
-                @Html.LabelFor(m => m.Password)
-                @Html.PasswordFor(m => m.Password)
+                @Html.LabelFor(m => m.Password)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                @Html.PasswordFor(m => m.Password, htmlAttributes: new { maxlength="25", style="width:10em" })
             </li>
             <li>
                 @Html.LabelFor(m => m.ConfirmPassword)
-                @Html.PasswordFor(m => m.ConfirmPassword)
+                @Html.PasswordFor(m => m.ConfirmPassword, htmlAttributes: new { maxlength="25", style="width:10em" })
             </li>
+            <li>
+                @Html.LabelFor(m => m.EmailId)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                @Html.TextBoxFor(m => m.EmailId, htmlAttributes: new { maxlength="35", style="width:15em" })
+            </li>
+            @*
+            <li>
+                @Html.LabelFor(m => m.Details)
+                @Html.TextBoxFor(m => m.Details)
+            </li>
+            *@
         </ol>
         <input type="submit" value="Register" />
     </fieldset>

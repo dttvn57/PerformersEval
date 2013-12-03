@@ -1,0 +1,34 @@
+enable-migrations (assume PerformersEval database has been created with the table FIN_PE_UserProfile seeded)
+	- configuration.cs is created
+	 	- AutomaticMigrationsEnabled = false;
+		- comment out the seed() body
+		
+add-migration initial
+	- initial.cs is created
+		- comment out the Up() and Down() body
+		
+public class PerformersDB : DbContext
+    {
+        public PerformersDB()
+            : base("name=DefaultConnection")
+        {
+          //Database.SetInitializer(new MigrateDatabaseToLatestVersion<PerformersDB, PerformersEval.Migrations.Configuration>("DefaultConnection"));
+            Database.SetInitializer<PerformersDB>(null);
+             // Database.SetInitializer<PerformersDB>(new DropCreateDatabaseAlways<PerformersDB>());
+        }
+
+global.aspx
+        protected void Application_Start()
+        {
+           //var migrator = new DbMigrator(new Configuration());
+           //migrator.Update();
+
+            if (!WebSecurity.Initialized)
+            {
+                //logger.Trace("::Application_Start calls WebSecurity.InitializeDatabaseConnection");
+                WebSecurity.InitializeDatabaseConnection("DefaultConnection",
+                    "FIN_PE_UserProfile", "UserId", "UserName", autoCreateTables: true);
+            }		
+			
+Publish & copies to IIS Test Server
+	- test with https://lib01acltest01.aclibrary.org/performerseval and with https://localhost/performerseval/FormsStatus (they both are ok)

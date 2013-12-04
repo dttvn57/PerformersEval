@@ -394,6 +394,8 @@
     <Content Include="Views\W9\Print.cshtml" />
     <Content Include="Views\Vendor\VendorForm.cshtml" />
     <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Vendor\Print.cshtml" />
+    <Content Include="Views\Performer\Print.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

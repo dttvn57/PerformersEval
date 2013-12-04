@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using PerformersEval.DAL;
 using PerformersEval.Models;
+using Rotativa;
 
 namespace PerformersEval.Controllers
 {
@@ -299,6 +300,31 @@ namespace PerformersEval.Controllers
                     return RedirectToAction("Index");
                 }
             }
+        }
+
+        public ActionResult Print(int id = 0)
+        {
+            Performer perf = _db.Performers.Find(id);
+            if (perf == null)
+            {
+                TempData["STATUS"] = "Performer not Found.";
+                return RedirectToAction("Index", "FormsStatus");
+            }
+            return View("Print", perf);
+        }
+
+        public ActionResult PrintPerformer(int spec = 0)
+        {
+            Performer perf = _db.Performers.Find(spec);
+            if (perf == null)
+            {
+                TempData["STATUS"] = "Performer not Found.";
+                return RedirectToAction("Index", "FormsStatus");
+            }
+            return new ActionAsPdf(
+                           "Print",
+                           new { id = spec }) { FileName = perf.Performer_TIN + "_SA.pdf" };
+
         }
 
         protected override void Dispose(bool disposing)

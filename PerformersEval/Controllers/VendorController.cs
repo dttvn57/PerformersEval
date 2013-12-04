@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using PerformersEval.DAL;
 using PerformersEval.Models;
 using WebMatrix.WebData;
+using Rotativa;
 
 namespace PerformersEval.Controllers
 {
@@ -198,6 +199,32 @@ namespace PerformersEval.Controllers
             //TempData["OBJECT"] = null;
             TempData["STATUS"] = "No Vendor Found";
             return RedirectToAction("Index", "FormsStatus");//, new { TIN = Vendor_FederalTaxID } );
+        }
+
+
+        public ActionResult Print(int id = 0)
+        {
+            Vendor v = _db.Vendors.Find(id);
+            if (v == null)
+            {
+                TempData["STATUS"] = "Vendor not Found.";
+                return RedirectToAction("Index", "FormsStatus");
+            }
+            return View("Print", v);
+        }
+
+        public ActionResult PrintVendor(int spec = 0)
+        {
+            Vendor v = _db.Vendors.Find(spec);
+            if (v == null)
+            {
+                TempData["STATUS"] = "Vendor not Found.";
+                return RedirectToAction("Index", "FormsStatus");
+            }
+            return new ActionAsPdf(
+                           "Print",
+                           new { id = spec }) { FileName = v.Vendor_FederalTaxID + "_Vendor.pdf" };
+
         }
 
         private void UpdateFormStatus(Vendor vendor)

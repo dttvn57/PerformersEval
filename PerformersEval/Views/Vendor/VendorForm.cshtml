@@ -1,5 +1,4 @@
 ﻿@model PerformersEval.Models.Vendor
-Form 110-13
 @{
     var editMode = 2;       // view
     if (TempData["EDITMODE"] == "create")
@@ -16,6 +15,8 @@ Form 110-13
     else
     { 
         ViewBag.Title = "View Vendor";
+        @Html.ActionLink("Print", "PrintVendor", new { spec = Model.VendorID }, new { onclick = "alertPrint();" } )
+        <br />
     }
 
     // initial default values
@@ -32,6 +33,7 @@ Form 110-13
    Model.Auditor_SignedDate = DateTime.Now;
    *@
 }
+Form 110-13
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
@@ -981,3 +983,14 @@ else
 }
 
 
+
+
+@section Scripts {
+<script type="text/javascript">
+    function alertPrint(result) {
+        var msg = "The Service Agreement has been saved to " + @Model.Vendor_FederalTaxID + "_Vendor.pdf in your Downloads folder. Please print.";
+        alert(msg);
+    }
+</script>
+    
+}

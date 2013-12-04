@@ -11,7 +11,7 @@ namespace PerformersEval.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201311202112286_initial"; }
+            get { return "201312022335162_initial"; }
         }
         
         string IMigrationMetadata.Source
